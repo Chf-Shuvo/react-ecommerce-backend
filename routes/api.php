@@ -32,7 +32,6 @@ Route::group(
             Route::group(['prefix' => 'user'], function (){
                 Route::get('index','index');
                 Route::post('store','store');
-                Route::get('view/{user}','view');
                 Route::get('edit/{user}','edit');
                 Route::patch('update/{user}','update');
                 Route::get('delete/{user}','delete');
